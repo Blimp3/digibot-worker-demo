@@ -1,0 +1,28 @@
+{
+  "name": "digibot-worker-synthetic-demo",
+  "version": "4.3.0",
+  "private": true,
+  "description": "Provider-free DigiBot Worker integration demo",
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.22.2",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "typecheck": "pnpm --dir apps/cloudflare-worker typecheck",
+    "lint": "pnpm --dir apps/cloudflare-worker lint",
+    "test": "pnpm --dir apps/cloudflare-worker test",
+    "secret:scan": "./scripts/scan-secrets.sh",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm secret:scan"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^22.18.0",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  }
+}

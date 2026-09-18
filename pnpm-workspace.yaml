@@ -1,0 +1,13 @@
+packages:
+  - "apps/cloudflare-worker"
+
+# Remove when Miniflare's sharp pin includes the upstream fix.
+overrides:
+  "miniflare@5.20260811.1-alpha>sharp": "0.35.4"
+
+allowBuilds:
+  esbuild: true
+  workerd: true
+
+minimumReleaseAgeExclude:
+  - '@cloudflare/workers-types@5.20260818.1'

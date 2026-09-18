@@ -1,0 +1,41 @@
+# JavaScript / TypeScript
+node_modules/
+.pnpm-store/
+dist/
+coverage/
+*.tsbuildinfo
+.wrangler/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Runtime media and local state
+downloads/
+media-jobs/
+*.part
+*.ytdl
+*.cookies
+cookies.txt
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.dev.vars.example
+.dev.vars
+GoogleService-Info.plist
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
